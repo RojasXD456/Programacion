@@ -1,0 +1,15 @@
+#styles{
+    margin: 10px;
+    padding: 100px;
+    border: 5px solid rgb(81, 38, 182);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin:center;
+    text-align: center;
+    font-size: 13
+
+}
+body{
+    padding: 100;
+}

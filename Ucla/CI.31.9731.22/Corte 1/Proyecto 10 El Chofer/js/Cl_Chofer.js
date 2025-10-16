@@ -7,11 +7,15 @@ export default class Cl_Chofer{
         return this.kilometros * 0.50
     }
     comision(){
-        if( this.kilometros > 200){}
+        if( this.kilometros > 200){
         return this.montoBase() *10/100
     }
+        else{
+        return 0
+    }
+    }
     montoFinal(){
-        return this.comision() + this.montoBase
+        return this.comision() + this.montoBase()
     }
 
 }
