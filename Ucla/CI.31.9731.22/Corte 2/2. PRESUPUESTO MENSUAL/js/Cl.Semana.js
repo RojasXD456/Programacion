@@ -13,7 +13,7 @@ export default class Cl_Semana{
         return this._montoGastos;
     }
     set montoGastos(m){
-        return this._montoGastos
+        this._montoGastos = this._montoGastos
     }
 
 

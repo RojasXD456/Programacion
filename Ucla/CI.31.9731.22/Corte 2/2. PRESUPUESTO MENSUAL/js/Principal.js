@@ -4,3 +4,4 @@ llevar el control de los gastos por semana. Para ello el programa requiere que s
 inicial presupuestado para gastos. Por semana solicite: el número de la semana y el monto de
 gastos. El programa debe reportar el total de gastos, el promedio de gastos y monto actualizado
 del presupuesto.*/ 
+
