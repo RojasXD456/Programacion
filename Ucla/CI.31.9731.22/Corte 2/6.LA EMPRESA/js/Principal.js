@@ -1,7 +1,7 @@
-import Cl_Empleado from "./Cl-Empleado.js";
-import Cl_iEmpleados from "./Cl-iEmpleados.js";
-import Cl_Empresa from "./Cl-Empresa.js";
-import Cl_iEmpresa from "./Cl-iEmpresa.js";
+import Cl_Empleado from "./Cl_Empleado.js";
+import Cl_iEmpleados from "./Cl_iEmpleado.js";
+import Cl_Empresa from "./Cl_Empresa.js";
+import Cl_iEmpresa from "./Cl_iEmpresa.js";
 
 let iEmpr = new Cl_iEmpresa;
 let empr = new Cl_Empresa;

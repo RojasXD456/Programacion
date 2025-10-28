@@ -1,15 +1,15 @@
 export default class Cl_Empresa{
     constructor(){
-         this.empleados = [];
-         this.mayorIngreso = null;
-         this.empleadoMasJoven = null;
-         this.totalIngresosMasculinos = 0;
-         this.totalEmpleadosMasculinos = 0;
+        this.empleados = [];
+        this.mayorIngreso = null;
+        this.empleadoMasJoven = null;
+        this.totalIngresosMasculinos = 0;
+        this.totalEmpleadosMasculinos = 0;
     }
     procesarEmpleados(empleado){
         this.empleados.push(empleado);
 
-       if (this.mayorIngreso === null || empleado.ingObtenido > this.mayorIngreso.ingObtenido) {
+    if (this.mayorIngreso === null || empleado.ingObtenido > this.mayorIngreso.ingObtenido) {
             this.mayorIngreso = empleado;
         }
         
