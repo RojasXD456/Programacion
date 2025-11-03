@@ -1,38 +1,29 @@
 export default class Cl_Empresa{
     constructor(){
-    this.actEmpresariales = 0;
-    this.totalRecibido = 0;
-    this.cntMenorMontoNeto = 1000;
-    this.cntResidencial = 0;
+        this.cntEmpresariales = 0;
+        this.totalRecibido = 0;
+        this.menorMontoNeto = 1000;
+        this.cntResidencial = 0;
+        this.totalClientes = 0; // Agregar para calcular porcentaje
     }
+    
     procesarCliente(Cliente){
-        if(this.tipo == 2){
+        // Contar tipos de clientes
+        if(Cliente.tipo == 2){
             this.cntEmpresariales++;
-        }
-        this.totalRecibido =+ cliente.netoPagar();
-
-        if(this.acmMenorMontoNeto < cliente.netoPagar()){
-            return this.acmMenorMontoNeto = cliente.netoPagar();
-        }
-        if(this.tipo == 1){
+        } else if(Cliente.tipo == 1){
             this.cntResidencial++;
+        }
         
-    }
-}
-porcentajeResidencial(){
-    return this.cntResidencial/5*100
-}
-get cntEmpresariales() {
-    return this._cntEmpresariales;
-}
+        this.totalRecibido += Cliente.netoPagar();
+        this.totalClientes++;
 
-get totalRecibido(){
-    return this._totalRecibido;
-}
-get acmMenorMontoNeto(){
-    return this._cntMenorMontoNeto;
-}
-get cntResidencial(){
-    return this._cntResidencial;
-}
+        if (Cliente.netoPagar() < this.menorMontoNeto){
+            this.menorMontoNeto = Cliente.netoPagar();
+        }
+    }
+    
+    porcentajeResidencial(){
+        return (this.cntResidencial / this.totalClientes) * 100;
+    }
 }

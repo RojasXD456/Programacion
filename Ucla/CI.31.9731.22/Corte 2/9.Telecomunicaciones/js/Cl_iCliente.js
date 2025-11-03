@@ -13,9 +13,9 @@ export default class Cl_iCliente{
     }
     repCliente(Cliente){
         return `===========================<br>
-        Codigo Cliente: ${cliente.codigo}<br>
-        Caontidad impulsos consumidos ${cliente.cantidadImpulsosConsumidos()}<br>
-        neto a pagar ${cliente.netoPagar()}<br>
+        Codigo Cliente: ${Cliente.codigo}<br>
+        Cantidad impulsos consumidos ${Cliente.cantidadImpulsosConsumidos()}<br>
+        Neto a pagar ${Cliente.netoPagar().toFixed(2)}<br>
         ===========================<br>`;
     }
 }

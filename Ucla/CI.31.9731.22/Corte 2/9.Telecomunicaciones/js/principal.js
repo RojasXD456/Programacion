@@ -21,19 +21,22 @@ let iEmpresa = new Cl_iEmpresa();
 let Empresa = new Cl_Empresa();
 let salida = document.getElementById("salida");
 
-for(i=0; i<5; i++){
+salida.innerHTML = `<h2>REPORTE CLIENTE</h2>`
+
+for(let i=0; i<5; i++){
     let codigo = iCliente.leerCodigo(i);
     let tipoCliente = iCliente.leerTipoCliente(i);
     let LecturaAct = iCliente.leerLecturaActual(i);
     let LecturaAnt = iCliente.leerLecturaAnterior(i);
 
-    let Cliente =+ new Cl_Cliente(codigo, tipoCliente,LecturaAct,LecturaAnt);
+    let Cliente = new Cl_Cliente(codigo, tipoCliente,LecturaAct,LecturaAnt);
     
-    salida.innerHTML = iCliente.repCliente(Cliente)
+    salida.innerHTML += iCliente.repCliente(Cliente)
 
     Empresa.procesarCliente(Cliente)
     
 }
-salida.innerHTML = iEmpresa.repEmpresa(Empresa)
+salida.innerHTML += `<h2>REPORTE EMPRESA</h2>`
+salida.innerHTML += iEmpresa.repEmpresa(Empresa)
 ;
 
