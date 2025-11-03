@@ -22,7 +22,7 @@ Por la Fiscalía:
 import Cl_Agricultor from "./Cl_Agricultor.js";
 import Cl_iAgricultor from "./Cl_iAgricultor.js";
 import Cl_Fiscalia from "./Cl_Fiscalia.js";
-import Cl_iFiscalia from "./Cl_iFiscalia.js";
+import Cl_iFiscalia from "./Cl_iFiscalia.js"
 
 let iAgricultor = new Cl_iAgricultor();
 let iFiscalia = new Cl_iFiscalia();
